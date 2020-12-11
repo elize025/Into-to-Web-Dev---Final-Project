@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Week 5 Project: Form Validate by Javascript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="myjs.js"></script>
+</head>
+<body>
+<!--This is comment-->
+
+<div id="container">
+	<div id="header">
+		<h1>Life is a Movie</h1>
+	</div>
+
+<div id="content">
+	<div id="nav">
+		<!---->
+		<img src="movie.png" style="width:200px; height:165px;"><br>
+		<h3 style="color:white; font-style:italic;">
+		<q>I have a theory that movies operate on the level of dreams, where you dream yourself.</q><br>
+		- Meryl Streep</h3>
+	</div>
+
+	<div id="main">
+		<form action="#">
+
+	<!--radio button-->
+			<h3>How often do you see a movie?</h3>
+
+			<input type="radio" name="fan" value="a super movie fan!">every week<br>
+			<input type="radio"  name="fan" value="a little bit movie fan!">once a month<br>
+			<input type="radio" name="fan" value="a not so movie fan!">once a year<br>
+			<br>
+			<input type="button" onclick="fanIntensity();" value="Movie Addiction">
+			<br><br>
+			<input type="text" id="degree" size="50">
+		<br>
+		</form>
+		
+		<form>
+	<!--checkbox-->
+			<h3>What are your top 3 favorite film genre?</h3>
+		<table>	
+			<tr>
+				<td><input type="checkbox" name="genre" value="action">action</td>
+				<td><input type="checkbox" name="genre" value="comedy">comedy</td>
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox" name="genre" value="horror">horror</td>
+				<td><input type="checkbox" name="genre" value="drama">drama</td>
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox" name="genre" value="science fiction">science fiction</td>
+				<td><input type="checkbox" name="genre" value="psycho thriller">psycho thriller</td>
+			</tr>
+			
+			<tr>
+				<td><input type="checkbox" name="genre" value="indie">indie</td>
+				<td><input type="checkbox" name="genre" value="anime">anime</td>
+			</tr>
+		</table>
+		
+		<input type="button" onclick="myGenre();" value="My Movie Genre"><br><br>
+		<input type="text" id="mygenre" size="60">
+			
+			
+	</form>
+	<form>
+	<!--text input-->
+	
+		<table border="0">
+				<tr>
+					<td><label for="uname">Name: </label></td>
+					<td><input name="uname" id="uName" type="text"
+						onblur="validateUserName();"></td>
+					<td class="echo"><span id="uNamePrompt">&nbsp</span></td>
+				</tr>
+
+				<tr>
+					<td><label for="email">Email: </label><//td>
+					<td><input name="email" id="emailAdd" type="text"
+						onblur="validateEmail();"
+						placeholder="name@website.ext"></td>
+					<td class="echo"><span id="eMailPrompt">&nbsp</span></td>
+				</tr>
+
+				<tr>
+					<td class="Button" id="Button" colspan="5"><span
+						class="buttonBG" onclick="userData();">LIGHTS, CAMERA, ACTION!</span></td>
+				</tr>
+			</table>
+
+			<span id="dataConfirm">&nbsp;</span>
+
+		</form>
+	</div>
+</div>
+<br>
+<div id="footer">
+		Copyright &copy; 2020 Elize Leyva.
+</div>
+</div>
+</body>
+</html>

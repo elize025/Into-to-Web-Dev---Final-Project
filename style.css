@@ -1,0 +1,70 @@
+body{
+	background-color:#5a6698;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #0089c7;
+}
+
+h1{
+	margin: 0;
+}
+
+#container{
+	background-color: #f5596a;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header{
+	background-color: #f1ba28;
+	color:#26d0ab;
+	text-align:center;
+}
+
+#content{
+	padding: 10px;
+}
+
+#nav{
+	width: 280px;
+	float: left;
+}
+
+#main{
+	width: 500px;
+	float: right;
+	color: white;
+	font-weight: bold;
+}
+
+#footer{
+	background-color: #6763be;
+	clear:both;
+	text-align: center;
+	padding:10px;
+	color: white;
+}
+
+.Button{
+	margin: auto;
+	text-align: center;
+	width: 50px;
+	padding: 20px;
+}
+
+.buttonBG{
+	background-color: #162067;
+	border-radius: 20px;
+	padding: 5px;
+	color: white;
+	font-size: small;
+}
+.echo{
+	text-align: center;
+	vertical-align: middle;
+	font-size: small;
+}
